@@ -1,0 +1,51 @@
+body {
+    margin: 0; /*Margem 0 para o site.*/
+    background: #f9f6e8; /*Cor de fundo*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex; /*É necessário para que toda adaptação de tela seja feita.*/
+    height: 80px; /*80pixels de altura*/
+    background-color: red;
+    border-bottom: 2.5px solid #970700; /*Borda vermelho-escuro na parte de baixo*/
+    align-items: center; /*Alinha no centro VERTICAMENTE*/
+    padding: 0 30px; /*Para o limite de dentro(padding) fazer com que a logo não grude no limite*/
+    box-shadow: 0 12px 8px rgba(36, 0, 0, 0.3); /*Sombra do header, marrom personalizado, não preto.*/
+}
+
+.etecLogo {
+  display: flex;
+  width: 30%;
+  margin-right: auto; /*Empurra conteúdo para ESQUERDA*/
+  transition: 0.4s;
+}
+
+.etecLogo path {
+    stroke: black;
+    stroke-width: 7;
+}
+
+.menu {
+  display: flex;
+  margin-left: auto; /*Empurra o conteúdo para DIREITA.*/
+  gap: 20px; /*Espaçamento de 20 pixels entre todos da classe menu*/
+}
+
+.menu a { /*Todas as tags "a" dentro da classe "menu" serão afetadas.*/
+  text-decoration: none;
+  color: white;
+  transition: 0.3s; /*Tempo de animação para o hover.*/
+  font-weight: 550; /*Negrito crescente da letra, escolhível por número.*/
+}
+
+.menu a:hover { /*Faz algo ENQUANTO o mouse estiver por cima.*/
+  font: bold;
+  color: yellow; /*SCALE(1.1) CRESCE O TEXTO SEM DESALINHAR.*/
+  transform: scale(1.2); /*POIS CRESCER TEXTO COM px DESALINHA.*/
+  font-weight: bold; /*Poderia ser "font-weight: 700;" também.*/
+}
+
+.etecLogo:hover {
+    transform: scale(1.1)
+}
