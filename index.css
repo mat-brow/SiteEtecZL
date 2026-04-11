@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+/* IMAGEM */
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* TEXTO EM CIMA */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    text-align: center;
+}
+
+/* TÍTULO */
+.hero-text h1 {
+    font-size: 36px;
+    margin: 0;
+    color: white;
+
+    text-shadow: 
+        -2px -2px 0 black,
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;
+}
+
+/* SUBTEXTO */
+.hero-text p {
+    font-size: 18px;
+    color: white;
+
+    text-shadow: 
+        -1px -1px 0 black,
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
+}
+
+.intro {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    border: 1px solid #faedcd;
+    background-color: #faedcd;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    transition: 0.3s
+}
+
+.intro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(0,0,0,0.2);
+}
+
+.intro p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-weight: 520;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* CONTAINER GERAL */
+.info-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/* CAIXA DE TEXTO */
+.info-box {
+    flex: 0.8; /*flex: 1;*/
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-weight: 510;
+}
+
+/* TEXTO */
+.info-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.info-box a {
+    color: blue;
+    font-weight: bold;
+}
+
+.info-box a:hover {
+    color: purple;
+    font-weight: 550;
+}
+
+/* MAPA */
+.map-box {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+}
+
+iframe { /*Estilização da incorporação do mapa.*/
+    width: 100%;
+    max-width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.contactUs {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    border: 1px solid #faedcd;
+    background-color: #faedcd;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.contactUs:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(0,0,0,0.2);
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+}
+
+.contactUs p {
+    color: black;
+    font-size: 22px;
+    font-weight: 550;
+    transition: 0.3s;
+}
+
+.contactUs p:hover {
+    color: darkblue;
+    transform: scale(1.05);
+}
